@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3900FA2-3226-4EF1-9974-FE278C1EC16F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuizApplicationLibrary</RootNamespace>
+    <AssemblyName>QuizApplication.Library</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\AnswerTypeBLL.cs" />
+    <Compile Include="BLL\ApplicationDataBLLL.cs" />
+    <Compile Include="BLL\ContentTypeBLL.cs" />
+    <Compile Include="BLL\MaxGroupBll.cs" />
+    <Compile Include="BLL\ProblemSectionTypeBLL.cs" />
+    <Compile Include="BLL\QuantComplexityTypeBLL.cs" />
+    <Compile Include="BLL\QuantitativeProblemBLL.cs" />
+    <Compile Include="BLL\QuantitativeProblemTypeBLL.cs" />
+    <Compile Include="BLL\QuantTestBLL.cs" />
+    <Compile Include="BLL\TakenTestAnswerBLL.cs" />
+    <Compile Include="BLL\TakenTestBLL.cs" />
+    <Compile Include="BLL\TestTakerBLL.cs" />
+    <Compile Include="BLL\WordBLL.cs" />
+    <Compile Include="CaseChanger.cs" />
+    <Compile Include="DAO\AnswerTypeDAO.cs" />
+    <Compile Include="DAO\ApplicationDataDAO.cs" />
+    <Compile Include="DAO\ContentTypeDAO.cs" />
+    <Compile Include="DAO\ProblemSectionTypeDAO.cs" />
+    <Compile Include="DAO\QuantComplexityTypeDAO.cs" />
+    <Compile Include="DAO\QuantitativeProblemDAO.cs" />
+    <Compile Include="DAO\QuantitativeProblemTypeDAO.cs" />
+    <Compile Include="DAO\QuantTestDAO.cs" />
+    <Compile Include="DAO\TakenTestAnswerDAO.cs" />
+    <Compile Include="DAO\TakenTestDAO.cs" />
+    <Compile Include="DAO\TestAndQuantQuestionRelationDAO.cs" />
+    <Compile Include="DAO\TestAndTestTakerRelationDAO.cs" />
+    <Compile Include="DAO\TestTakerDAO.cs" />
+    <Compile Include="DAO\WordDAO.cs" />
+    <Compile Include="DBNameConst.cs" />
+    <Compile Include="enum-events.cs" />
+    <Compile Include="InMemoryValues.cs" />
+    <Compile Include="POCO\AnswerType.cs" />
+    <Compile Include="POCO\ApplicationData.cs" />
+    <Compile Include="POCO\ContentType.cs" />
+    <Compile Include="POCO\DataGridViewSnapshot.cs" />
+    <Compile Include="POCO\MaxGroup.cs" />
+    <Compile Include="POCO\ProblemSectionType.cs" />
+    <Compile Include="POCO\QuantComplexityType.cs" />
+    <Compile Include="POCO\QuantitativeProblem.cs" />
+    <Compile Include="POCO\QuantitativeProblemType.cs" />
+    <Compile Include="POCO\QuantTest.cs" />
+    <Compile Include="POCO\TakenTest.cs" />
+    <Compile Include="POCO\TakenTestAnswer.cs" />
+    <Compile Include="POCO\TestAndTestTakerRelation.cs" />
+    <Compile Include="POCO\TestTaker.cs" />
+    <Compile Include="POCO\Word.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RingBuffer.cs" />
+    <Compile Include="SelectionErrorMessages.cs" />
+    <Compile Include="ShufflableList.cs" />
+    <Compile Include="UniqueRandomNumber.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PrescriptionTrackingSystem [for UIU]\00. Simple.Framework\PrescriptionTrackingSystem\Simple.Framework\Simple.Framework.csproj">
+      <Project>{ac539ad8-0299-4f6b-b9ed-bdf68ca73fc3}</Project>
+      <Name>Simple.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
