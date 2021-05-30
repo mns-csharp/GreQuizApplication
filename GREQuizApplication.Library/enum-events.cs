@@ -22,14 +22,14 @@ namespace QuizApplicationLibrary
         Name, 
         CorrectnessCount
     }
-    public enum FormViewMode
-    {
-        Nothing,
-        Add,
-        Edit,
-        Collection,
-        Picker
-    }
+    //public enum FormViewMode
+    //{
+    //    Nothing,
+    //    Add,
+    //    Edit,
+    //    Collection,
+    //    Picker
+    //}
     public enum UnitTypeEnum
     {
         Gram,

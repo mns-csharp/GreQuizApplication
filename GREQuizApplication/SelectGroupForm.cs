@@ -9,6 +9,8 @@ using System.Windows.Forms;
 using QuizApplicationLibrary.BLL;
 using QuizApplicationLibrary.POCO;
 using Simple.Framework;
+using Simple.Framework.Gui;
+
 namespace QuizApplication
 {
     public partial class SelectGroupForm : BaseForm

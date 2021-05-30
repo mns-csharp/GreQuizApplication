@@ -15,7 +15,8 @@ namespace QuizApplication
     using System.Drawing.Imaging;
     using QuizApplicationLibrary.BLL;
     using QuizApplicationLibrary.POCO;
-    
+    using Simple.Framework.Gui;
+    using Simple.Framework.Orm;
 
     public partial class CollectionForm : BaseForm
     {

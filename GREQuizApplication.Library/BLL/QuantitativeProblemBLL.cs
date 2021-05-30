@@ -134,7 +134,7 @@ namespace QuizApplicationLibrary.BLL
 
                 _quantitativeproblemDAO.Save(tm, item);
 
-                PivotTable.UpdateNextIdField(tm, "QuantitativeProblem", ret);
+                PivotTable.UpdateNewID(tm, "QuantitativeProblem", ret);
 
                 tm.CommitTransaction();
             }

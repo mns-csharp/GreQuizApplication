@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using QuizApplicationLibrary.BLL;
 using QuizApplicationLibrary.POCO;
+using Simple.Framework.Orm;
+
 namespace QuizApplication
 {
     public partial class LearningForm : Form

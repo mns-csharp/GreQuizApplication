@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizApplication", "GREQuizApplication\QuizApplication.csproj", "{BE36796C-2619-4422-A800-C5FFF33A7C2D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple.Framework", "..\PrescriptionTrackingSystem [for UIU]\00. Simple.Framework\PrescriptionTrackingSystem\Simple.Framework\Simple.Framework.csproj", "{AC539AD8-0299-4F6B-B9ED-BDF68CA73FC3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{49DC0BC5-651E-4F4E-BF46-8F27CB59F24F}"
 EndProject
@@ -23,10 +21,6 @@ Global
 		{BE36796C-2619-4422-A800-C5FFF33A7C2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE36796C-2619-4422-A800-C5FFF33A7C2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE36796C-2619-4422-A800-C5FFF33A7C2D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AC539AD8-0299-4F6B-B9ED-BDF68CA73FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AC539AD8-0299-4F6B-B9ED-BDF68CA73FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AC539AD8-0299-4F6B-B9ED-BDF68CA73FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AC539AD8-0299-4F6B-B9ED-BDF68CA73FC3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C3900FA2-3226-4EF1-9974-FE278C1EC16F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C3900FA2-3226-4EF1-9974-FE278C1EC16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3900FA2-3226-4EF1-9974-FE278C1EC16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -38,5 +32,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7C71B0D-C68A-4E0D-A74B-41FD015749B9}
 	EndGlobalSection
 EndGlobal

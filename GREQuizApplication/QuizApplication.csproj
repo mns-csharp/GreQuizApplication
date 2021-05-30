@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuizApplication</RootNamespace>
     <AssemblyName>QuizApplication</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -43,6 +43,9 @@
   <ItemGroup>
     <Reference Include="EnhancedGlassButton">
       <HintPath>..\..\CustomWindowsForm\EnhancedGlassButton_dll_for_VS_Toolbox\EnhancedGlassButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple.Framework">
+      <HintPath>..\LIBS\Simple.Framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -218,20 +221,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\PrescriptionTrackingSystem [for UIU]\00. Simple.Framework\PrescriptionTrackingSystem\Simple.Framework\Simple.Framework.csproj">
-      <Project>{ac539ad8-0299-4f6b-b9ed-bdf68ca73fc3}</Project>
-      <Name>Simple.Framework</Name>
-    </ProjectReference>
+    <Content Include="49.ico" />
+    <None Include="Resources\honeypot-ant-800x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\GREQuizApplication.Library\QuizApplicationLibrary.csproj">
       <Project>{c3900fa2-3226-4ef1-9974-fe278c1ec16f}</Project>
       <Name>QuizApplicationLibrary</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="49.ico" />
-    <None Include="Resources\honeypot-ant-800x500.jpg" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

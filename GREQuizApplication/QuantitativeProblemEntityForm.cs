@@ -1,4 +1,5 @@
 ﻿using Simple.Framework;
+using Simple.Framework.Gui;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

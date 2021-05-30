@@ -9,6 +9,8 @@ using Simple.Framework;
 using QuizApplicationLibrary;
 using QuizApplicationLibrary.POCO;
 using QuizApplicationLibrary.BLL;
+using Simple.Framework.Gui;
+using Simple.Framework.Orm;
 
 namespace QuizApplication
 {

@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MathPracticeApplication</RootNamespace>
     <AssemblyName>MathPracticeApplication</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,8 +32,12 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Simple.Framework">
+      <HintPath>..\LIBS\Simple.Framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -123,10 +128,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\PrescriptionTrackingSystem [for UIU]\00. Simple.Framework\PrescriptionTrackingSystem\Simple.Framework\Simple.Framework.csproj">
-      <Project>{ac539ad8-0299-4f6b-b9ed-bdf68ca73fc3}</Project>
-      <Name>Simple.Framework</Name>
-    </ProjectReference>
     <ProjectReference Include="..\GREQuizApplication.Library\QuizApplicationLibrary.csproj">
       <Project>{c3900fa2-3226-4ef1-9974-fe278c1ec16f}</Project>
       <Name>QuizApplicationLibrary</Name>

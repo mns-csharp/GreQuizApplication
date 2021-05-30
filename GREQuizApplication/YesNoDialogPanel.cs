@@ -11,6 +11,8 @@ using QuizApplicationLibrary;
 using QuizApplicationLibrary.BLL;
 using QuizApplicationLibrary.POCO;
 using Simple.Framework;
+using Simple.Framework.Orm;
+
 namespace QuizApplication
 {
     public partial class YesNoDialogPanel : UserControl

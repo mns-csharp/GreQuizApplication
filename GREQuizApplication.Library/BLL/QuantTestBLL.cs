@@ -146,7 +146,7 @@ namespace QuizApplicationLibrary.BLL
 
                 int c = _testAndQuantQuestionRelationDAO.Save(tm, item.ID, item.Problems);
 
-                PivotTable.UpdateNextIdField(tm, "QuantTest", newId);
+                PivotTable.UpdateNewID(tm, "QuantTest", newId);
 
 
 

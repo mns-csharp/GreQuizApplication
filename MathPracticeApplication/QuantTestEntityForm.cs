@@ -2,6 +2,8 @@
 using QuizApplicationLibrary.BLL;
 using QuizApplicationLibrary.POCO;
 using Simple.Framework;
+using Simple.Framework.Gui;
+using Simple.Framework.Orm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

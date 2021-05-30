@@ -481,7 +481,7 @@ namespace QuizApplicationLibrary.BLL
 
                 _wordDAO.Save(tm, item);
 
-                PivotTable.UpdateNextIdField(tm, "GreWords", newId);
+                PivotTable.UpdateNewID(tm, "GreWords", newId);
 
                 tm.CommitTransaction();
             }

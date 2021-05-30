@@ -13,6 +13,9 @@ namespace QuizApplication
     using QuizApplicationLibrary;
     using QuizApplicationLibrary.BLL;
     using QuizApplicationLibrary.POCO;
+    using Simple.Framework.Gui;
+    using Simple.Framework.Orm;
+
     public partial class WordEntityFormCopy : BaseForm
     {
         //public Word Word { get; set; }
